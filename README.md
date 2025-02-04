@@ -57,25 +57,27 @@ This chat server is a multi-threaded TCP server that supports:
    Open a terminal in the project directory and run:
    ```bash
    make
-
-This will compile both the server and client executables (server_grp and client_grp).
+  
+  This will compile the server and client executables (server_grp and client_grp).
 
 2. *Run the Server*:
    In one terminal window, run:
+   ```bash
    ./server_grp
 
-   The server will start listening on port 12345.
+The server will start listening on port 12345.
 
-3. *Run the Client*:
+4. *Run the Client*:
    In another terminal window, run:
-   ./client_grp
+   ```bash
+    ./client_grp
 
-   Follow the prompts to log in and start chatting.
+Follow the prompts to log in and start chatting.
 
 Additional Notes
 	•	The code uses standard C++20 libraries along with POSIX socket functions.
 	•	Mutexes (via std::lock_guard<std::mutex>) are used to protect shared resources from concurrent access.
-	•	The server handles each client in its own detached thread, allowing multiple clients to communicate concurrently.
+	•	The server handles each client in its detached thread, allowing multiple clients to communicate concurrently.
 
 Enjoy your chat server!
 
