@@ -55,9 +55,10 @@ This chat server is a multi-threaded TCP server that supports:
 ## How to Compile and Run
 1. *Compile*:  
    Open a terminal in the project directory and run:
-   ```bash make
+   ```bash
+   make
 
-   This will compile both the server and client executables (server_grp and client_grp).
+This will compile both the server and client executables (server_grp and client_grp).
 
 2. *Run the Server*:
    In one terminal window, run:
