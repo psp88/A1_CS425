@@ -67,7 +67,7 @@ This chat server is a multi-threaded TCP server that supports:
 
 The server will start listening on port 12345.
 
-4. *Run the Client*:
+3. *Run the Client*:
    In another terminal window, run:
    ```bash
     ./client_grp
